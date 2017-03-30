@@ -6,8 +6,8 @@
 </head>
 <body>
   <header class="main_header">
-    <div class="container">
-      <heder class="top_header">
+    <div class="top_header">
+      <div class="container">
         <div class="logo">
           <a href="#">ТЕХНОМАРТ</a>
         </div>
@@ -18,28 +18,51 @@
             </button>
             <input type="text" name="search" placeholder="Поиск">
           </form>
-          <button class="btn btn_mark" type="button"><img src="img/bookmark.png" alt=""></button>
+        </div>
+        <div class="marks">
+          <button class="btn btn_mark" type="button"><img
+            src="img/bookmark.png" alt="">
+          </button>
           <a href="#">Закладки: 0</a>
         </div>
         <div class="cart">
-          <a href="#"><img src="img/cart.png" alt="Корзина"> Корзина: 3</a>
+          <a href="#">
+            <img src="img/cart.png" alt="Корзина"> Корзина: 3
+          </a>
         </div>
         <div class="order">
           <a href="#">Оформить заказ</a>
         </div>
-      </heder>
-      <div class="description">
-        <p>Vestibulum dignissim lectus id velit vulputate, id facilisis erat hendrerit.</p>
       </div>
-      <div class="contacts">
-        <button class="btn btn_phone"><img src="img/phone.png" alt="Телефон"> +7 (812) 924-66-56</button>
-        <p>г. Санкт-Петербург ,ул. Большая Конюшенная, д. 4/6/8</p>
+    </div>
+    <div class="mid_header">
+      <div class="container">
+        <div class="description">
+          <p>
+            Vestibulum dignissim lectus id velit vulputate, id facilisis erat hendrerit.
+          </p>
+        </div>
+        <div class="contacts">
+          <button class="btn btn_phone">
+            <img src="img/phone.png" alt="Телефон">
+             +7 (812) 924-66-56
+           </button>
+          <p>
+            г. Санкт-Петербург ,ул. Большая Конюшенная, д. 4/6/8
+          </p>
+        </div>
+        <div class="user">
+          <a href="#">
+            <img src="img/login.png" alt="">Войти
+          </a>
+          <a href="#">
+            Регистрация
+          </a>
+        </div>
       </div>
-      <div class="user">
-        <a href="#"><img src="img/login.png" alt="">Войти</a>
-        <a href="#">Регистрация</a>
-      </div>
-      <header class="navigation_header">
+    </div>
+    <div class="navigation_header">
+      <div class="container">
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -49,7 +72,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </header>
+      </div>
     </div>
   </header>
   <main>
@@ -75,7 +98,7 @@
         </div>
       </div>
       <div class="popular popular_items">
-        <p>Попуярные товары</p>
+        <p>Популярные товары</p>
         <a href="#">Все попуярные товары</a>
       </div>
       <div class="items">
@@ -150,7 +173,9 @@
           </a>
         </div>
       </div>
-      <div class="services">
+    </div>
+    <div class="services">
+      <div class="container">
         <div class="services_top">
           <h3>Сервисы</h3>
           <p>
@@ -172,7 +197,9 @@
           </div>
         </div>
       </div>
-      <div class="company_info">
+    </div>
+    <div class="company_info">
+      <div class="container">
         <div class="info_left">
           <h3>Компания "Техномарт"</h3>
           <p>
@@ -180,11 +207,11 @@
           </p>
           <p>Aenean posuere tincidunt nulla, eget gravida ipsum sagittis volutpat.
           </p>
-          <li>
-            <ul><p>Деловые линии</p></ul>
-            <ul><p>Автотрейдинг</p></ul>
-            <ul><p>ЖелДорЭкспедиции</p></ul>
-          </li>
+          <ul>
+            <li><p>Деловые линии</p></li>
+            <li><p>Автотрейдинг</p></li>
+            <li><p>ЖелДорЭкспедиции</p></li>
+          </ul>
           <a href="#">Подробнее о компании</a>
         </div>
         <div class="info_right">
@@ -196,14 +223,19 @@
           <a href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
-      <div class="pre_footer">
-        <div class="pre_footer_left">
+    </div>
+  </main>
+  <footer class="main">
+    <div class="top_footer">
+      <div class="container">
+        <div class="top_footer_left">
           <a href="#">Техномарт</a>
           <p>
-            г. Санкт-Петербург ,ул. Большая Конюшенная, д. 4/6/8
+            г. Санкт-Петербург ,ул. Большая Конюшенная, д. 4/6/8 <br>
+            +7 (812) 924-66-56
           </p>
         </div>
-        <div class="pre_footer_right">
+        <div class="top_footer_right">
           <a href="#">Компания</a>
           <a href="#">Новости</a>
           <a href="#">Каталог</a>
@@ -215,30 +247,35 @@
           <a href="#">Спецпредложения</a>
         </div>
       </div>
-      </div>
-  </main>
-  <footer>
-    <div class="conntainer">
-      <div class="copyright">
-        <p>
-            Duis a tempus nunc. Vestibulum dignissim lectus id velit vulputate, id facilisis erat hendrerit.
-        </p>
-      </div>
-      <div class="social">
-        <a href="https://vk.com" class="social_btn social_btn_vk">VK</a>
-        <a href="https://www.facebook.com/" class="social_btn social_btn_facebook">Facebook</a>
-        <a href="https://www.instagram.com/" class="social_btn social_btn_instagram">Instagram</a>
     </div>
-    <div class="feedback">
-      <p>
-        Обратая связь: <br>
-        <a href="#">mail.htmlacademy.ru</a>
-      </p>
-    </div>
-    <div class="courses_copyright">
-      <p>
-        Разработано - <br>
-        <a href="#">https://htmlacademy.ru</a>
-      </p>
+    <div class="bottom_footer">
+      <div class="container">
+        <div class="copyright">
+          <p>
+              Duis a tempus nunc. Vestibulum dignissim lectus id velit vulputate, id facilisis erat hendrerit.
+          </p>
+        </div>
+        <div class="social">
+          <a href="https://vk.com" class="social_btn social_btn_vk">VK</a>
+          <a href="https://www.facebook.com/" class="social_btn social_btn_facebook">Facebook</a>
+          <a href="https://www.instagram.com/" class="social_btn social_btn_instagram">Instagram</a>
+        </div>
+        <div class="copyright">
+          <div class="feedback">
+            <p>
+              Обратая связь: <br>
+              <a href="#">mail.htmlacademy.ru</a>
+            </p>
+          </div>
+          <div class="courses_copyright">
+            <p>
+              Разработано - <br>
+              <a href="#">https://htmlacademy.ru</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
+</body>
+</html>
