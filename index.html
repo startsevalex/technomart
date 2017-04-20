@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main_header">
@@ -12,12 +13,11 @@
           <a href="#">ТЕХНОМАРТ</a>
         </div>
         <div class="search">
-          <form class="search_form" action="#" method="post">
-            <button class="btn btn_search" type="submit">
-              <img src="img/search.png" alt="Поиск">
-            </button>
-            <input type="text" name="search" placeholder="Поиск">
-          </form>
+          <a href="#">
+            <img src="img/search.png" alt="Поиск">
+          </a>
+          <label for="search">Поиск</label>
+          <input type="text" name="search" id="search">
         </div>
         <div class="marks">
           <button class="btn btn_mark" type="button"><img
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="navigation_header">
-      <div class="container">
+      <nav>
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -72,7 +72,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
   <main>
@@ -97,80 +97,117 @@
           <a href="#">Доставка</a>
         </div>
       </div>
-      <div class="popular popular_items">
-        <p>Популярные товары</p>
-        <a href="#">Все попуярные товары</a>
-      </div>
-      <div class="items">
-        <div class="item">
-          <img src="img/item_1.png" alt="Перфоратор №1">
-          <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-          <p class="strike">32500 Р.</p>
-          <p>25500 Р.</p>
+      <div class="popular">
+        <div class="popular_items_header">
+          <span>Популярные товары</span>
+          <a href="#">Все попуярные товары</a>
         </div>
-        <div class="item">
-          <img src="img/item_1.png" alt="Перфоратор №1">
-          <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-          <p class="strike">32500 Р.</p>
-          <p>25500 Р.</p>
+        <div class="items">
+          <ul>
+            <li>
+              <div class="item">
+                <a href="#">
+                  <img src="img/item_1.png" alt="Перфоратор №1">
+                  <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                  <span class="strike">32500 Р.</span>
+                  <span>25500 Р.</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#">
+                  <img src="img/item_1.png" alt="Перфоратор №1">
+                  <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                  <span class="strike">32500 Р.</span>
+                  <span>25500 Р.</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#">
+                  <img src="img/item_1.png" alt="Перфоратор №1">
+                  <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                  <span class="strike">32500 Р.</span>
+                  <span>25500 Р.</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <a href="#">
+                  <img src="img/item_1.png" alt="Перфоратор №1">
+                  <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                  <span class="strike">32500 Р.</span>
+                  <span>25500 Р.</span>
+                </a>
+              </div>
+            </li>
         </div>
-        <div class="item">
-          <img src="img/item_1.png" alt="Перфоратор №1">
-          <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-          <p class="strike">32500 Р.</p>
-          <p>25500 Р.</p>
+        <div class="popular_brands_header">
+          <span>Попуярные производители</span>
+          <a href="#">Все производители</a>
         </div>
-        <div class="item">
-          <img src="img/item_1.png" alt="Перфоратор №1">
-          <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-          <p class="strike">32500 Р.</p>
-          <p>25500 Р.</p>
-        </div>
-      </div>
-      <div class="popular popular_brands">
-        <p>Попуярные производители</p>
-        <a href="#">Все производители</a>
-      </div>
-      <div class="brands_block">
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
-        </div>
-        <div class="brand">
-          <a href="#">
-            <img src="img/bosch.png" alt="Bosch">
-          </a>
+        <div class="brands">
+          <ul>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="brand">
+                <a href="#">
+                  <img src="img/bosch.png" alt="Bosch">
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

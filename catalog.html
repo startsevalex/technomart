@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main_header">
@@ -12,12 +13,11 @@
           <a href="#">ТЕХНОМАРТ</a>
         </div>
         <div class="search">
-          <form class="search_form" action="#" method="post">
-            <button class="btn btn_search" type="submit">
-              <img src="img/search.png" alt="Поиск">
-            </button>
-            <input type="text" name="search" placeholder="Поиск">
-          </form>
+          <a href="#">
+            <img src="img/search.png" alt="Поиск">
+          </a>
+          <label for="search">Поиск</label>
+          <input type="text" name="search" id="search">
         </div>
         <div class="marks">
           <button class="btn btn_mark" type="button"><img
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div class="navigation_header">
-      <div class="container">
+      <nav>
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -79,46 +79,52 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
   <main>
     <div class="container">
-      <div class="breadcrumbs">
-        <ul>
-          <li><a href="#"><img src="img/home.png" alt="Домой"></a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Перфораторы</a></li>
-        </ul>
-      </div>
-      <div class="category_name">
-        <p>Перфораторы</p>
+      <ul class="breadcramps">
+        <li><a href="#"><img src="img/home.png" alt="Домой"></a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><span>Перфораторы</span></li>
+      </ul>
+      <div class="items_header">
+        <span>Перфораторы</span>
       </div>
       <div class="output">
         <div class="filter">
           <header class="output">
-            <p>Фильтр:</p>
+            <span>Фильтр:</span>
           </header>
-          <form class="filter_form" action="#">
-            <input type="text">
-            -
-            <input type="text">
-            <p>Производители</p>
-            <input type="checkbox" id="bosch"><label for="bosch">Bosch</label>
-            <input type="checkbox" id="interskol"><label for="interskol">Interskol</label>
-            <input type="checkbox" id="makita"><label for="makita">Makita</label>
-            <input type="checkbox" id="dewalt"><label for="dewalt">Dewalt</label>
-            <input type="checkbox" id="hitachi"><label for="hitachi">Hitachi</label>
-            <p>Питание</p>
-            <input type="radio" id="battery" name="supply"><label for="battery">Аккамуляторные</label>
-            <input type="radio" id="network" name="supply"><label for="network">Сетевые</label><br>
-            <input type="submit" value="Показать">
+          <form class="filter" action="#">
+            <div class="filter_price">
+              <div class="price_contoller"></div>
+              <span>Цена</span>
+              <input type="text" name="min_price">
+              -
+              <input type="text" name="max_price">
+            </div>
+            <div class="filter_brands">
+              <legend>Производители</legend>
+              <input type="checkbox" id="bosch"><label for="bosch">Bosch</label>
+              <input type="checkbox" id="interskol"><label for="interskol">Interskol</label>
+              <input type="checkbox" id="makita"><label for="makita">Makita</label>
+              <input type="checkbox" id="dewalt"><label for="dewalt">Dewalt</label>
+              <input type="checkbox" id="hitachi"><label for="hitachi">Hitachi</label>
+            </div>
+            <div class="filter_supply">
+              <legend>Питание</legend>
+              <input type="radio" id="battery" name="supply"><label for="battery">Аккамуляторные</label>
+              <input type="radio" id="network" name="supply"><label for="network">Сетевые</label><br>
+              <input type="submit" value="Показать">
+            </div>
           </form>
         </div>
         <div class="output_items">
           <header class="output">
-            <p>Сортировка</p>
+            <span>Сортировка: </span>
             <ul>
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
@@ -131,75 +137,91 @@
             <ul>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
                   <a href="#">Купить</a>
-                  <button>В корзину</button>
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">В закладки</a>
+                  <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                  <span class="strike">32500 Р.</span>
+                  <span>25500 Р.</span>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
               <li>
                 <div class="item">
-                  <img src="img/item_1.png" alt="Перфоратор №1">
-                  <p><a href="#">Перфоратор Bosch GBH 2-26 DRE</a></p>
-                  <p class="strike">32500 Р.</p>
-                  <p>25500 Р.</p>
+                  <a href="#">
+                    <img src="img/item_1.png" alt="Перфоратор №1">
+                    <span>Перфоратор Bosch GBH 2-26 DRE</span>
+                    <span class="strike">32500 Р.</span>
+                    <span>25500 Р.</span>
+                  </a>
                 </div>
               </li>
             </ul>
